@@ -508,21 +508,21 @@ footer p {
 @media screen and (max-width:760px) {
     /*CUARZOS*/
     .cuadro-piedra {
-        width: 170px;
-        height: 170px;
+        height: 200px;
+        width: 200px;
     }
 
     .contenedor-propiedades .cuadro-propiedades {
-        height: 140px;
-        width: 140px;
+        height: 180px;
+        width: 190px;
     }
 
     .cuadro-propiedades p {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .contenedor-propiedades .cuadro-propiedades h3 {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .contenedor-propiedades img{
@@ -571,12 +571,11 @@ footer p {
     }
 }
 
-@media screen and (max-width:580px){
+@media screen and (max-width:640px) {
     /*CUARZOS*/
     .contenedor-propiedades img{
         display: none;
     }
-
     .contenedor-cuarzos{
         width: 100%;
     }
@@ -636,5 +635,15 @@ footer p {
 
     .categorias a h3 {
         font-size: 18px;
+    }
+
+    /*CUARZOS*/
+    .cuadro-piedra{
+        width: 100%;
+    }
+
+    .contenedor-propiedades .cuadro-propiedades {
+        height: 140px;
+        width: 280px;
     }
 }
