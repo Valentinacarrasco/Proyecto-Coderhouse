@@ -1,0 +1,596 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap");
+.contacto h2, .preguntas h2, .propiedades h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  color: rgb(255, 154, 173);
+  margin: 30px 0px 30px 60px;
+}
+
+.slogan img, .hero .cristales-hero img, .hero .sol-hero img, .hero .collar-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 237, 240);
+}
+
+header a {
+  text-decoration: none;
+}
+header a h1 {
+  text-align: center;
+  font-family: "Playwrite RO", cursive;
+  font-size: 40px;
+  font-weight: 200;
+  color: rgb(255, 154, 173);
+  margin-top: 20px;
+}
+header nav .nav-item {
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: black;
+  background-color: rgb(254, 226, 237);
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-auto-rows: 250px;
+  padding: 15px 5px;
+  gap: 15px;
+  background-image: url(../../img/imagenes-inicio/fondo-hero.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.hero .parrafo-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Homemade Apple", cursive;
+  font-size: 17px;
+  padding: 30px;
+}
+.hero .sol-hero {
+  grid-row: span 2;
+}
+.hero .texto-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  grid-row: span 2;
+}
+.hero .texto-hero button {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(255, 154, 173);
+  font-weight: 700;
+  border: 1.5px solid rgb(255, 154, 173);
+}
+.hero .texto-hero button:hover {
+  background-color: rgb(255, 154, 173);
+  border: 1.5px solid rgb(255, 154, 173);
+  color: white;
+}
+.hero .cristales-hero {
+  grid-column: span 2;
+}
+.slogan {
+  position: relative;
+  height: 200px;
+  margin: 20px 0;
+}
+.slogan img {
+  display: block;
+  opacity: 0.7;
+}
+.slogan p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-size: 30px;
+}
+
+.categorias h2 {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(255, 154, 173);
+  font-weight: 400;
+  margin: 40px 0 0 30px;
+}
+.categorias div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.categorias div a {
+  height: 250px;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(255, 255, 233, 0.509);
+  box-shadow: 1px 1px 5px rgba(247, 168, 217, 0.368);
+  text-decoration: none;
+}
+.categorias div a img {
+  width: 100%;
+}
+.categorias div a h3 {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(255, 154, 173);
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tienda {
+  display: flex;
+}
+.tienda .contenedor-productos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 85%;
+}
+.tienda .contenedor-productos a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  height: 250px;
+  width: 230px;
+  margin: 0 10px 20px 10px;
+  transition: 0.5s;
+}
+.tienda .contenedor-productos a:hover {
+  transform: scale(1.04);
+  box-shadow: 1px 1px 5px rgba(205, 139, 179, 0.409);
+}
+.tienda .contenedor-productos a img {
+  width: 100%;
+}
+.tienda .contenedor-productos a div {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(255, 154, 173);
+  margin-left: 5px;
+}
+.tienda .contenedor-productos a div h3 {
+  font-size: 20px;
+}
+.tienda .contenedor-productos a div h4 {
+  font-size: 15px;
+}
+
+.filtros {
+  width: 15%;
+  background-color: rgb(254, 226, 237);
+  font-family: "Quicksand", sans-serif;
+  box-shadow: 1px 1px 5px rgba(247, 168, 217, 0.368);
+}
+.filtros h3 {
+  font-size: 25px;
+  margin-left: 10px;
+  color: rgb(255, 154, 173);
+}
+.filtros ul {
+  list-style: none;
+  padding-left: 0;
+}
+.filtros ul li {
+  font-size: 18px;
+  margin-left: 10px;
+}
+.filtros ul li input {
+  margin: 5px;
+}
+
+.propiedades .contenedor-propiedades {
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+}
+.propiedades .contenedor-propiedades img {
+  width: 300px;
+  height: 100%;
+  margin-right: 10px;
+}
+.propiedades .contenedor-propiedades .contenedor-cuarzos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra {
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 1px 1px 5px rgba(205, 139, 179, 0.409);
+  margin: 0 15px 15px 0;
+}
+.propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra .cuadro-propiedades {
+  background-color: rgba(254, 226, 237, 0.719);
+  height: 200px;
+  width: 200px;
+  padding: 10px 0 0 10px;
+}
+.propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra .cuadro-propiedades h3 {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(255, 154, 173);
+  background-color: rgb(254, 226, 237);
+  font-size: 20px;
+  text-align: end;
+  padding-right: 5px;
+}
+.propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra .cuadro-propiedades p {
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  padding-right: 5px;
+  font-size: 12px;
+  text-align: justify;
+}
+.propiedades .contenedor-propiedades .contenedor-cuarzos .amatista {
+  background-image: url(../../img/imagenes-cuarzos/amatista.jpg);
+}
+.propiedades .contenedor-propiedades .contenedor-cuarzos .cuarzo-rosa {
+  background-image: url(../../img/imagenes-cuarzos/cuarzo-rosa.jpg);
+}
+.propiedades .contenedor-propiedades .contenedor-cuarzos .selenita {
+  background-image: url(../../img/imagenes-cuarzos/selenita.jpg);
+}
+.propiedades .contenedor-propiedades .contenedor-cuarzos .citrino {
+  background-image: url(../../img/imagenes-cuarzos/citrino.jpg);
+}
+.propiedades .contenedor-propiedades .contenedor-cuarzos .pirita {
+  background-image: url(../../img/imagenes-cuarzos/pirita.jpg);
+}
+.propiedades .contenedor-propiedades .contenedor-cuarzos .cuarzo-cristal {
+  background-image: url(../../img/imagenes-cuarzos/cuarzo-cristal.jpg);
+}
+
+.preguntas .contenedor-preguntas {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 90%;
+  margin: 0 auto;
+}
+.preguntas .contenedor-preguntas .accordion {
+  width: 70%;
+  font-family: "Quicksand", sans-serif;
+  box-shadow: 1px 1px 5px rgba(247, 168, 217, 0.368);
+}
+.preguntas .contenedor-preguntas .accordion .accordion-button:not(.collapsed) {
+  background-color: rgb(254, 226, 237);
+  color: rgb(255, 154, 173);
+}
+.preguntas .contenedor-preguntas img {
+  width: 300px;
+  margin: 0 10px;
+}
+
+.contacto .contenedor-contacto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contacto .contenedor-contacto .formulario-contacto {
+  width: 50%;
+  height: 380px;
+  padding: 10px;
+  box-shadow: 1px 1px 5px rgba(247, 168, 217, 0.368);
+}
+.contacto .contenedor-contacto .formulario-contacto .btn {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: white;
+  background-color: rgb(255, 154, 173);
+}
+.contacto .contenedor-contacto iframe {
+  box-shadow: 1px 1px 5px rgba(205, 139, 179, 0.409);
+}
+.contacto .imagenes-contacto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  margin: 40px auto;
+}
+.contacto .imagenes-contacto img {
+  width: 200px;
+}
+
+footer {
+  margin-top: 30px;
+}
+footer .redes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(254, 226, 237);
+  height: 100px;
+}
+footer .redes div {
+  margin: 20px;
+}
+footer .redes div h4 {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(255, 154, 173);
+  font-size: 20px;
+}
+footer .redes div a i {
+  font-size: 25px;
+  color: black;
+  margin: 5px;
+}
+footer .redes div a i:hover {
+  color: rgb(255, 154, 173);
+}
+footer .redes h3 {
+  font-family: "Playwrite RO", cursive;
+  color: rgb(255, 154, 173);
+  margin: 30px;
+}
+footer p {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  color: rgb(95, 95, 95);
+}
+
+@media screen and (max-width: 1105px) {
+  .propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra {
+    width: 210px;
+    height: 210px;
+  }
+  .propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra .cuadro-propiedades {
+    height: 160px;
+    width: 160px;
+  }
+  .propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra .cuadro-propiedades h3 {
+    font-size: 15px;
+  }
+  .propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra .cuadro-propiedades p {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 915px) {
+  .hero .parrafo-hero {
+    font-size: 14px;
+    padding: 20px;
+  }
+  .hero .sol-hero {
+    grid-row: span 1;
+  }
+  .hero .cristales-hero {
+    grid-column: span 3;
+  }
+  .hero .texto-hero {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .tienda {
+    flex-direction: column;
+  }
+  .tienda .contenedor-productos {
+    width: 100%;
+  }
+  .filtros {
+    width: 100%;
+    order: -1;
+    margin-bottom: 20px;
+  }
+  .filtros ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  .preguntas .contenedor-preguntas img {
+    width: 250px;
+  }
+  .contacto .contenedor-contacto iframe {
+    width: 300px;
+  }
+  .contacto .imagenes-contacto {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .tienda .contenedor-productos a {
+    height: 210px;
+    width: 190px;
+  }
+  .propiedades .contenedor-propiedades img {
+    width: 200px;
+  }
+  .propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra {
+    height: 200px;
+    width: 200px;
+  }
+  .propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra .cuadro-propiedades {
+    height: 180px;
+    width: 190px;
+  }
+  .propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra .cuadro-propiedades h3 {
+    font-size: 15px;
+  }
+  .propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra .cuadro-propiedades p {
+    font-size: 12px;
+  }
+  .preguntas .contenedor-preguntas {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .preguntas .contenedor-preguntas .accordion {
+    width: 100%;
+  }
+  .preguntas .contenedor-preguntas img {
+    margin: 10px;
+  }
+  .contacto .contenedor-contacto {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacto .contenedor-contacto .formulario-contacto {
+    width: 80%;
+    margin: 10px;
+  }
+  .contacto .contenedor-contacto iframe {
+    width: 500px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .hero {
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 230px 180px;
+  }
+  .hero .parrafo-hero {
+    font-size: 12px;
+  }
+  .hero .collar-hero {
+    display: none;
+  }
+  .hero .texto-hero {
+    font-size: 14px;
+    grid-row: span 1;
+  }
+  .slogan {
+    height: 150px;
+  }
+  .categorias h2 {
+    font-size: 22px;
+  }
+  .categorias div a {
+    height: 190px;
+    width: 150px;
+  }
+  .categorias div a h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .slogan p {
+    font-size: 25px;
+  }
+  .propiedades .contenedor-propiedades img {
+    display: none;
+  }
+  .propiedades .contenedor-propiedades .contenedor-cuarzos {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contacto .contenedor-contacto iframe {
+    width: 400px;
+  }
+  .contacto .imagenes-contacto {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 570px) {
+  .hero {
+    grid-template-rows: 230px 140px;
+  }
+  .hero .parrafo-hero {
+    font-size: 10px;
+    grid-column: span 2;
+    background-image: url(../../img/imagenes-inicio/sol-hero.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .hero .sol-hero {
+    display: none;
+  }
+  .hero .texto-hero {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px;
+  }
+  .hero .texto-hero button {
+    font-size: 12px;
+  }
+  .slogan {
+    height: 100px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slogan p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .categorias div a {
+    height: 160px;
+    width: 130px;
+  }
+  .categorias div a h3 {
+    font-size: 18px;
+  }
+  .tienda .contenedor-productos .producto {
+    height: 170px;
+    width: 150px;
+  }
+  .filtros ul li {
+    font-size: 14px;
+  }
+  .propiedades h2 {
+    margin: 20px auto;
+    text-align: center;
+  }
+  .propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra {
+    width: 100%;
+    margin: 0 10px 20px 10px;
+  }
+  .propiedades .contenedor-propiedades .contenedor-cuarzos .cuadro-piedra .cuadro-propiedades {
+    height: 140px;
+    width: 280px;
+  }
+  .preguntas h2 {
+    margin: 20px auto;
+    text-align: center;
+  }
+  .contacto h2 {
+    margin: 20px auto;
+    text-align: center;
+  }
+  .contacto .contenedor-contacto iframe {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

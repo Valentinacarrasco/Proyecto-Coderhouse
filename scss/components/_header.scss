@@ -1,0 +1,24 @@
+header{
+    a{
+        text-decoration: none;
+        h1{
+            text-align: center;
+            font-family: $fuente-titulo;
+            font-size: 40px;
+            font-weight: 200;
+            color: $color-texto;
+            margin-top: 20px;  
+        }
+    }
+    nav{
+        .nav-item{
+            text-decoration: none;
+            font-family: $fuente-texto;
+            font-weight: 400;
+            color: black;
+            background-color: $color-elemento;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    }
+}

@@ -1,0 +1,306 @@
+//*? HERO
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-auto-rows: 250px;
+    padding: 15px 5px;
+    gap: 15px;
+    background-image: url(../../img/imagenes-inicio/fondo-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    .parrafo-hero{
+        @include flex(flex, center, center);
+        font-family: "Homemade Apple", cursive;
+        font-size: 17px;
+        padding: 30px;
+    }
+    .collar-hero{
+        img{
+            @extend %cover-img;
+        }
+    }
+    .sol-hero{
+        grid-row: span 2;
+        img{
+            @extend %cover-img;          
+        }
+    }
+    .texto-hero{
+        @include flex(flex, center, center);
+        flex-direction: column;
+        padding: 15px;
+        font-family: $fuente-texto;
+        font-size: 20px;
+        font-weight: 400;
+        grid-row: span 2;
+        button{
+            font-family: $fuente-texto;
+            color: $color-texto;
+            font-weight: 700;
+            border: 1.5px solid rgb(255, 154, 173);
+            &:hover{
+                background-color: rgb(255, 154, 173);
+                border: 1.5px solid rgb(255, 154, 173);
+                color: white;
+            }
+        }
+    }
+    .cristales-hero{
+        grid-column: span 2;
+        img{
+            @extend %cover-img;  
+        }
+    }
+}
+
+
+//*? SLOGAN
+.slogan{
+    position: relative;
+    height: 200px;
+    margin: 20px 0;    
+    img{
+        @extend %cover-img;
+        display: block;
+        opacity: 0.7;
+    }
+    p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: "Edu NSW ACT Cursive", cursive;
+        font-size: 30px;
+    }
+}
+
+
+//*? CATEGORIAS
+.categorias{
+    h2{
+        font-family: $fuente-texto;
+        color: $color-texto;
+        font-weight: 400;
+        margin: 40px 0 0 30px
+    }
+    div{
+        @include flex(flex, space-evenly, center);
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        a{
+            height: 250px;
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            background-color: rgba(255, 255, 233, 0.509);
+            box-shadow: nth($sombras, 1);
+            text-decoration: none;
+            img{
+                width: 100%;
+            }
+            h3{
+                font-family: $fuente-texto;
+                color: $color-texto;
+                font-size: 25px;
+                font-weight: 400;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
+//*? TIENDA
+.tienda{
+    display: flex;
+    .contenedor-productos{
+        @include flex(flex, space-evenly, center);
+        flex-wrap: wrap;
+        width: 85%;
+        a{
+            text-decoration: none;
+            @include flex(flex, space-between, start);
+            flex-direction: column;
+            height: 250px;
+            width: 230px;
+            margin: 0 10px 20px 10px;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.04);
+                box-shadow: nth($sombras, 2);
+            }
+            img{
+                width: 100%;
+            }
+            div{
+                font-family: $fuente-texto;
+                color: $color-texto;
+                margin-left: 5px;
+                h3{
+                    font-size: 20px;
+                }
+                h4{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+.filtros{
+    width: 15%;
+    background-color: $color-elemento;
+    font-family: $fuente-texto;
+    box-shadow: nth($sombras, 1);
+    h3{
+        font-size: 25px;
+        margin-left: 10px;
+        color: $color-texto;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+        li{
+            font-size: 18px;
+            margin-left: 10px;
+            input{
+                margin: 5px;
+            }
+        }
+    }
+}
+
+
+//*? CUARZOS
+.propiedades{
+    h2{
+        @extend %titulo-h2;
+    }
+    .contenedor-propiedades{
+        @include flex(flex, space-between, normal);
+        img{
+            width: 300px;
+            height: 100%;
+            margin-right: 10px;
+        }
+        .contenedor-cuarzos{
+            @include flex (flex, space-evenly, center);
+            flex-wrap: wrap;
+            width: 80%;
+            .cuadro-piedra{
+                width: 250px;
+                height: 250px;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                box-shadow: nth($sombras, 2);       
+                margin: 0 15px 15px 0;
+                .cuadro-propiedades{
+                    background-color: rgba(254, 226, 237, 0.719);
+                    height: 200px;
+                    width: 200px;
+                    padding: 10px 0 0 10px;
+                    h3{
+                        font-family: $fuente-texto;
+                        color: $color-texto;
+                        background-color: $color-elemento;
+                        font-size: 20px;
+                        text-align: end;
+                        padding-right: 5px;
+                    }
+                    p{
+                        font-family: $fuente-texto;
+                        color: black;
+                        padding-right: 5px;
+                        font-size: 12px;
+                        text-align: justify;
+                    }
+                }
+            }
+            .amatista{
+                background-image: url(../../img/imagenes-cuarzos/amatista.jpg);
+            }
+            .cuarzo-rosa{
+                background-image: url(../../img/imagenes-cuarzos/cuarzo-rosa.jpg);
+            }
+            .selenita{
+                background-image: url(../../img/imagenes-cuarzos/selenita.jpg);
+            }
+            .citrino{
+                background-image: url(../../img/imagenes-cuarzos/citrino.jpg);
+            }
+            .pirita{
+                background-image: url(../../img/imagenes-cuarzos/pirita.jpg);
+            }
+            .cuarzo-cristal{
+                background-image: url(../../img/imagenes-cuarzos/cuarzo-cristal.jpg);
+            }
+        }
+    }
+}
+
+
+//*?FAQ
+.preguntas{
+    h2{
+        @extend %titulo-h2;
+    }
+    .contenedor-preguntas{
+        @include flex(flex, space-between, start);
+        width: 90%;
+        margin: 0 auto;
+        .accordion{
+            width: 70%;
+            font-family: $fuente-texto;
+            box-shadow: nth($sombras, 1);
+            .accordion-button{
+                &:not(.collapsed){
+                    background-color: $color-elemento;
+                    color: $color-texto;
+                }
+            }
+        }
+        img{
+        width: 300px;
+        margin: 0 10px;
+    }
+    }
+}
+
+
+//*?CONTACTO
+.contacto{
+    h2{
+        @extend %titulo-h2;
+    }
+    .contenedor-contacto{
+        @include flex(flex, space-evenly, center);
+        .formulario-contacto{
+            width: 50%;
+            height: 380px;
+            padding: 10px;
+            box-shadow: nth($sombras, 1);
+            .btn{
+                font-family: $fuente-texto;
+                font-weight: 400;
+                color: white;
+                background-color: $color-texto;
+            }
+        }
+        iframe{
+        box-shadow: nth($sombras, 2);
+        }
+    }
+    .imagenes-contacto{
+        @include flex(flex, space-evenly, center);
+        width: 70%;
+        margin: 40px auto;
+        img{
+            width: 200px;
+        }
+    }
+}
