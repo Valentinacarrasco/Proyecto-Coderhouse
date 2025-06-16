@@ -52,7 +52,7 @@ header nav .nav-item {
   grid-auto-rows: 250px;
   padding: 15px 5px;
   gap: 15px;
-  background-image: url(../../img/imagenes-inicio/fondo-hero.jpg);
+  background-image: url(../img/imagenes-inicio/fondo-hero.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -258,22 +258,22 @@ header nav .nav-item {
   text-align: justify;
 }
 .propiedades .contenedor-propiedades .contenedor-cuarzos .amatista {
-  background-image: url(../../img/imagenes-cuarzos/amatista.jpg);
+  background-image: url(../img/imagenes-cuarzos/amatista.jpg);
 }
 .propiedades .contenedor-propiedades .contenedor-cuarzos .cuarzo-rosa {
-  background-image: url(../../img/imagenes-cuarzos/cuarzo-rosa.jpg);
+  background-image: url(../img/imagenes-cuarzos/cuarzo-rosa.jpg);
 }
 .propiedades .contenedor-propiedades .contenedor-cuarzos .selenita {
-  background-image: url(../../img/imagenes-cuarzos/selenita.jpg);
+  background-image: url(../img/imagenes-cuarzos/selenita.jpg);
 }
 .propiedades .contenedor-propiedades .contenedor-cuarzos .citrino {
-  background-image: url(../../img/imagenes-cuarzos/citrino.jpg);
+  background-image: url(../img/imagenes-cuarzos/citrino.jpg);
 }
 .propiedades .contenedor-propiedades .contenedor-cuarzos .pirita {
-  background-image: url(../../img/imagenes-cuarzos/pirita.jpg);
+  background-image: url(../img/imagenes-cuarzos/pirita.jpg);
 }
 .propiedades .contenedor-propiedades .contenedor-cuarzos .cuarzo-cristal {
-  background-image: url(../../img/imagenes-cuarzos/cuarzo-cristal.jpg);
+  background-image: url(../img/imagenes-cuarzos/cuarzo-cristal.jpg);
 }
 
 .preguntas .contenedor-preguntas {
