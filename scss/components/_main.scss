@@ -30,7 +30,7 @@
         flex-direction: column;
         padding: 15px;
         font-family: $fuente-texto;
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 400;
         grid-row: span 2;
         button{
@@ -201,8 +201,8 @@
                 margin: 0 15px 15px 0;
                 .cuadro-propiedades{
                     background-color: rgba(254, 226, 237, 0.719);
-                    height: 200px;
-                    width: 200px;
+                    height: 210px;
+                    width: 220px;
                     padding: 10px 0 0 10px;
                     h3{
                         font-family: $fuente-texto;
@@ -216,8 +216,8 @@
                         font-family: $fuente-texto;
                         color: black;
                         padding-right: 5px;
-                        font-size: 12px;
-                        text-align: justify;
+                        font-size: 17px;
+                        text-align: left;
                     }
                 }
             }
@@ -258,6 +258,7 @@
             font-family: $fuente-texto;
             box-shadow: nth($sombras, 1);
             .accordion-button{
+                font-weight: 600;
                 &:not(.collapsed){
                     background-color: $color-elemento;
                     color: $color-texto;
