@@ -191,7 +191,7 @@ header nav .nav-item {
   font-family: "Quicksand", sans-serif;
   box-shadow: 1px 1px 5px rgba(247, 168, 217, 0.368);
 }
-.filtros h3 {
+.filtros h2 {
   font-size: 25px;
   margin-left: 10px;
   color: rgb(255, 154, 173);
